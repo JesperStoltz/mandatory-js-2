@@ -27,7 +27,7 @@ let circle = 'O'; //Symbol for player O.
 let winner = "false"; //Controls whether someone has won. Becomes true when the right IFs are met in didIWin().
 let player = 2; //Controls who's turn it is. Primarily used in function playerTurn() and didIWin().
 let symbol; //Defines the players symbol.
-let control = document.querySelectorAll(".playButton"); //Creates a variable for all of the buttons in the html with the class 'playButton'
+let control = $(".playButton"); //Creates a variable for all of the buttons in the html with the class 'playButton'
 let clicked; //is created to be used in the function playerTurn under section CLICK-FUNCTION. It will be used for e.target, meaning the button that is being clicked on.
 let roundCount = 1; //Counts the amount of rounds and is used for the anonymous function used for the restart-button. 
 //roundCount is primarily for fun and not a nessecary variable if you don't want to keep track of how often the player restarts.
